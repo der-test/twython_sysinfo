@@ -35,6 +35,13 @@ percent = (used * 100) / total
 usedmb = used / 1024
 totalmb = total / 1024
 
+# IP, change Adresse to the output of ifconfig
+#en
+#cmd = '/sbin/ifconfig wlan0 | grep -Po \'t addr:\K[\d.]+\''
+#de
+cmd = '/sbin/ifconfig wlan0 | grep -Po \'t Adresse:\K[\d.]+\''
+ip  = os.popen(cmd).readline().strip()
+
 # Console output for debug
 print "Finished gathering sysinfo!"
 print "Tweeting..."
@@ -42,7 +49,7 @@ print "Tweeting..."
 # Load last snpshot the from motion standard image folder
 # motion config snapshot_interval must be larger than 0
 photo = open('/var/lib/motion/lastsnap.jpg', 'rb')
-tweet = 'CPU temperature: '+temp+' C. ' 'The date and time is: '+time+'. ' 'Memory usage: ' + str(usedmb) + 'M of ' + str(totalmb) + 'M or ' + str(percent) + '%.'
+tweet = 'CPU temperature: '+temp+' C. ' 'The date and time is: '+time+'. ' 'Memory usage: ' + str(usedmb) + 'M of ' + str(totalmb) + 'M or ' + str(percent) + '%. IP: '+ip
 api.update_status_with_media(status=tweet, media=photo)
 
 # Uncomment the following line to send a tweet without an attached image
