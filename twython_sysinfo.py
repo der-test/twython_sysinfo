@@ -60,7 +60,7 @@ api.update_status_with_media(status=tweet, media=photo)
 
 # Uncomment the following line to send a tweet without an attached image
 # and add a comment to the previous line instead
-api.update_status(status = tweet)
+# api.update_status(status = tweet)
 
 #Console output for debug
 print "Finished tweeting! Submitted tweet:"
