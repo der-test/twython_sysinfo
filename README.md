@@ -15,11 +15,13 @@ Based on djfav's gists over at https://gist.github.com/djfav
 * `str(totalmb)`
 * `str(percent)`
 ### Network
-*`ip` (language specific) 
+* `ip` (language specific) 
 ** available: en, de
 ** standard: de
+* `extip`
 ## Installation
 * Install twython
+* Optional: Install dnsutils to display external IP (dig)
 * Optional: Install motion and configure snapshots to be taken 
 * Clone this repo
 * Change `your_data` to the strings from you own twitter app
