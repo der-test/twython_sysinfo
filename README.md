@@ -22,7 +22,9 @@ Based on djfav's gists over at https://gist.github.com/djfav
 ## Installation
 * Install twython
 * Optional: Install dnsutils to display external IP (dig)
-* Optional: Install motion and configure snapshots to be taken 
+* Optional: Install motion
+** Configure snapshots to be taken (config details will be added later)
+** Add `input -1` to the end of /etc/motion/motion.conf to avoid problems with USB cameras
 * Clone this repo
 * Change `your_data` to the strings from you own twitter app
 * Optional: Uncomment one of the lines starting wit `api.` depending on the usage of snapshots
