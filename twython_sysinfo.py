@@ -52,7 +52,7 @@ extip  = os.popen(cmd).readline().strip()
 print "Finished gathering sysinfo!"
 print "Tweeting..."
 
-# Load last snpshot the from motion standard image folder
+# Load last snapshot the from motion standard image folder
 # motion config snapshot_interval must be larger than 0
 photo = open('/var/lib/motion/lastsnap.jpg', 'rb')
 tweet = 'CPU temperature: '+temp+' C. ' 'The date and time is: '+time+'. ' 'Memory usage: ' + str(usedmb) + 'M of ' + str(totalmb) + 'M or ' + str(percent) + '%. IP: '+extip
