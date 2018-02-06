@@ -19,7 +19,7 @@ The string `# coding: utf-8` is necessary for correct formatting of umlauts.
 
 ## Configuration
 * Edit the configuration
-  * `nano twython_sysinfo.py`
+  * `nano config.ini`
 * Change `your_data` to the strings from you own twitter app
 * Optional: Uncomment one of the lines starting wit `api.` depending on the usage of snapshots
   * Tweet with media is set as standard. Can be switched to text only.
