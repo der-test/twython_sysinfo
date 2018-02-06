@@ -14,18 +14,16 @@ The string `# coding: utf-8` is necessary for correct formatting of umlauts.
   * Add `input -1` to the end of /etc/motion/motion.conf to avoid problems with USB cameras
 * Clone this repo
   * `git clone https://github.com/der-test/twython_sysinfo`
-* Open downoloaded folder
+* Open downloaded folder
     * `cd twython-sysinfo`
 
 ## Configuration
 * Edit the configuration
   * `nano config.ini`
-* Change `your_data` to the strings from you own twitter app
-* Optional: Uncomment one of the lines starting wit `api.` depending on the usage of snapshots
-  * Tweet with media is set as standard. Can be switched to text only.
-  * Two separate versions will be available soon™.
-* `photo` path can needs to be changed if not using motion standard config
+  * Change `your_data` to the strings from you own twitter app
 * `tweet` may contain escaped text like `Some text:` and the available stats like `time+`(first element in the tweet, `+time+`(between) and `+time` (last element).
+* twysinfo_media.py
+  * `photo` path needs to be changed if not using motion standard config
 
 ### Available stats
 #### Date and time
