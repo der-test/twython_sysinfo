@@ -31,13 +31,13 @@ The string `# coding: utf-8` is necessary for correct formatting of umlauts.
 #### CPU temperature
 * `temp`
 #### Memory usage
-* `tr(usedmb)`
+* `str(usedmb)`
 * `str(totalmb)`
 * `str(percent)`
 #### Network
 * `ip` (language specific)
-** available: en, de
-** standard: de
+  * available: en, de
+  * standard: de
 * `extip`
 
 Based on djfav's gists over at https://gist.github.com/djfav
